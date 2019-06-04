@@ -42,8 +42,8 @@
 		C401DA5E22A5CB8A006D7973 /* JournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTests.swift; sourceTree = "<group>"; };
 		C401DA6022A5CB8A006D7973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C401DA6922A5CD7C006D7973 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
-		C401DA6B22A5CF1B006D7973 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
-		C401DA6D22A5D117006D7973 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		C401DA6B22A5CF1B006D7973 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryTableViewCell.swift; path = Views/EntryTableViewCell.swift; sourceTree = "<group>"; };
+		C401DA6D22A5D117006D7973 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryDetailViewController.swift; path = Views/EntryDetailViewController.swift; sourceTree = "<group>"; };
 		C401DA7022A5D19A006D7973 /* Journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journal.xcdatamodel; sourceTree = "<group>"; };
 		C401DA7222A5D215006D7973 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		C401DA7422A5D5B6006D7973 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 				C401DA7622A5D623006D7973 /* EntryController.swift */,
 				C401DA7422A5D5B6006D7973 /* CoreDataStack.swift */,
 				C401DA4D22A5CB89006D7973 /* Main.storyboard */,
-				C401DA6D22A5D117006D7973 /* EntryDetailViewController.swift */,
 				C401DA6B22A5CF1B006D7973 /* EntryTableViewCell.swift */,
+				C401DA6D22A5D117006D7973 /* EntryDetailViewController.swift */,
 				C401DA6922A5CD7C006D7973 /* JournalTableViewController.swift */,
 				C401DA5022A5CB8A006D7973 /* Assets.xcassets */,
 				C401DA5222A5CB8A006D7973 /* LaunchScreen.storyboard */,
