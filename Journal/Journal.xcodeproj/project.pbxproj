@@ -48,6 +48,7 @@
 		C401DA7622A5D623006D7973 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		C401DA7922A6E7E2006D7973 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		C401DA7B22A6E82B006D7973 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		C401DA8122A6EB7D006D7973 /* Journal 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Journal 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,16 +91,13 @@
 			isa = PBXGroup;
 			children = (
 				C401DA4922A5CB89006D7973 /* AppDelegate.swift */,
-				C401DA6F22A5D19A006D7973 /* Journal.xcdatamodeld */,
-				C401DA7222A5D215006D7973 /* Entry+Convenience.swift */,
-				C401DA7622A5D623006D7973 /* EntryController.swift */,
-				C401DA7922A6E7E2006D7973 /* EntryDetailViewController.swift */,
-				C401DA7422A5D5B6006D7973 /* CoreDataStack.swift */,
+				C401DA8022A6E9D4006D7973 /* Models */,
+				C401DA7E22A6E9A2006D7973 /* Controllers */,
+				C401DA7F22A6E9C7006D7973 /* Helpers */,
+				C401DA7D22A6E981006D7973 /* Views */,
 				C401DA4D22A5CB89006D7973 /* Main.storyboard */,
-				C401DA6922A5CD7C006D7973 /* JournalTableViewController.swift */,
-				C401DA7B22A6E82B006D7973 /* EntryTableViewCell.swift */,
-				C401DA5022A5CB8A006D7973 /* Assets.xcassets */,
 				C401DA5222A5CB8A006D7973 /* LaunchScreen.storyboard */,
+				C401DA5022A5CB8A006D7973 /* Assets.xcassets */,
 				C401DA5522A5CB8A006D7973 /* Info.plist */,
 			);
 			path = Journal;
@@ -112,6 +110,41 @@
 				C401DA6022A5CB8A006D7973 /* Info.plist */,
 			);
 			path = JournalTests;
+			sourceTree = "<group>";
+		};
+		C401DA7D22A6E981006D7973 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C401DA7B22A6E82B006D7973 /* EntryTableViewCell.swift */,
+				C401DA7922A6E7E2006D7973 /* EntryDetailViewController.swift */,
+				C401DA6922A5CD7C006D7973 /* JournalTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C401DA7E22A6E9A2006D7973 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C401DA7622A5D623006D7973 /* EntryController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C401DA7F22A6E9C7006D7973 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C401DA7422A5D5B6006D7973 /* CoreDataStack.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C401DA8022A6E9D4006D7973 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C401DA6F22A5D19A006D7973 /* Journal.xcdatamodeld */,
+				C401DA7222A5D215006D7973 /* Entry+Convenience.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,9 +527,10 @@
 		C401DA6F22A5D19A006D7973 /* Journal.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C401DA8122A6EB7D006D7973 /* Journal 2.xcdatamodel */,
 				C401DA7022A5D19A006D7973 /* Journal.xcdatamodel */,
 			);
-			currentVersion = C401DA7022A5D19A006D7973 /* Journal.xcdatamodel */;
+			currentVersion = C401DA8122A6EB7D006D7973 /* Journal 2.xcdatamodel */;
 			path = Journal.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

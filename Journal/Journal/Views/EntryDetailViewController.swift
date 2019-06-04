@@ -19,7 +19,7 @@ class EntryDetailViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodyTextView: UITextView!
-    
+    @IBOutlet weak var moodSegmentedControl: UISegmentedControl!
     
     func updateViews() {
         guard isViewLoaded else { return }
@@ -27,6 +27,15 @@ class EntryDetailViewController: UIViewController {
             title = entry?.title
             titleTextField.text = entry?.title
             bodyTextView.text = entry?.bodyText
+            
+            let mood: Mood
+            if let entryMood = entry?.mood {
+                mood = Mood(rawValue: entryMood)!
+            } else {
+                mood = Mood.😁
+            }
+            moodSegmentedControl.selectedSegmentIndex = Mood.allMoods.firstIndex(of: mood)!
+            
         } else {
             title = "Create New Entry"
         }
@@ -40,11 +49,13 @@ class EntryDetailViewController: UIViewController {
             !title.isEmpty,
             let body = bodyTextView.text,
             !body.isEmpty else { return }
+        let segmentIndex = moodSegmentedControl.selectedSegmentIndex
+        guard let mood = moodSegmentedControl.titleForSegment(at: segmentIndex) else { return }
         
         if let entry = entry {
-            entryController?.updateEntry(entry: entry, title: title, bodyText: body)
+            entryController?.updateEntry(entry: entry, title: title, bodyText: body, mood: mood)
         } else {
-            entryController?.createEntry(title: title, bodyText: body)
+            entryController?.createEntry(title: title, bodyText: body, mood: mood)
         }
         
         navigationController?.popViewController(animated: true)
