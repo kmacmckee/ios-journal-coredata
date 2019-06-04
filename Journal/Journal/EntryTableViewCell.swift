@@ -9,11 +9,11 @@
 import UIKit
 
 class EntryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var timeStampLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
-
+    
     var entry: Entry? {
         didSet {
             updateViews()
@@ -32,7 +32,7 @@ class EntryTableViewCell: UITableViewCell {
         timeStampLabel.text = formattedDate
         bodyLabel.text = entry.bodyText
     }
-
+    
     
     
     

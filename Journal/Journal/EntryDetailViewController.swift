@@ -9,7 +9,7 @@
 import UIKit
 
 class EntryDetailViewController: UIViewController {
-
+    
     var entry: Entry? {
         didSet {
             updateViews()
@@ -48,15 +48,15 @@ class EntryDetailViewController: UIViewController {
         }
         
         navigationController?.popViewController(animated: true)
-
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         updateViews()
     }
-
-
+    
+    
 }
