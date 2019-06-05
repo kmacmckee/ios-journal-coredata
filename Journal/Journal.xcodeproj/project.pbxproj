@@ -115,9 +115,9 @@
 		C401DA7D22A6E981006D7973 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C401DA6922A5CD7C006D7973 /* JournalTableViewController.swift */,
 				C401DA7B22A6E82B006D7973 /* EntryTableViewCell.swift */,
 				C401DA7922A6E7E2006D7973 /* EntryDetailViewController.swift */,
-				C401DA6922A5CD7C006D7973 /* JournalTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
